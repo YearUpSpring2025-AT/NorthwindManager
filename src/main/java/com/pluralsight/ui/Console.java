@@ -92,7 +92,7 @@ public class Console {
             try {
                 int choice = promptForInt("Select option (1–" + options.length + "): ");
                 if (choice >= 1 && choice <= options.length) {
-                    return choice - 1; // Return index for easier use
+                    return choice; // Return index for easier use
                 } else {
                     System.out.println("Invalid choice. Please enter a number between 1 and " + options.length + ".");
                 }
